@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced HTML5 Page</title>
+  <style>
+    table, th, td {
+      border: 1px solid #000;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman Numerals -->
+  <section>
+    <h2>Order List</h2>
+    <ol type="I">
+      <li>Pixel Image</li>
+      <li>Contact Table</li>
+      <li>Registration Form</li>
+    </ol>
+  </section>
+
+  <!-- External Image -->
+  <section>
+    <h2>Image from Pixel</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Pexels image" width="500">
+  </section>
+
+  <!-- Table of Contacts -->
+  <section>
+    <h2>Contacts Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Mobile</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Caren Atieno</td>
+          <td>Kochogo</td>
+          <td>07963289</td>
+          <td>carnatieno1@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Effy Wang</td>
+          <td>Ojere</td>
+          <td>07268637</td>
+          <td>effywang2@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Conjestina Waber</td>
+          <td>Obungi</td>
+          <td>0798658</td>
+          <td>conjeswabe1@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Samuel Adongo</td>
+          <td>Kagimba</td>
+          <td>0113567</td>
+          <td>samadongo3@gmail.com</td>
+        </tr>
+        <tr>
+          <td>Lavender Wao</td>
+          <td>Bunde</td>
+          <td>07867543</td>
+          <td>lavwao@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Registration Form -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST">
+      <!-- Name Field -->
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Joy Martin" required><br><br>
+
+      <!-- Email Field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="email@example.com" required><br><br>
+
+      <!-- Password Field -->
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" minlength="6" placeholder="Enter a strong password" required><br><br>
+
+      <!-- Date Field -->
+      <label for="dob">Date of Birth:</label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+
+      <!-- Dropdown -->
+      <label for="country">Country:</label><br>
+      <select id="country" name="country" required>
+        <option value="">Select Country</option>
+        <option value="kenya">Kenya</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="uganda">Uganda</option>
+      </select><br><br>
+
+      <!-- Radio Buttons -->
+      <p>Gender:</p>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label><br>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label><br><br>
+
+      <!-- Checkboxes -->
+      <p>Hobbies:</p>
+      <input type="checkbox" id="reading" name="hobbies" value="Reading">
+      <label for="reading">Reading</label><br>
+      <input type="checkbox" id="sports" name="hobbies" value="Sports">
+      <label for="sports">Sports</label><br>
+      <input type="checkbox" id="music" name="hobbies" value="Music">
+      <label for="music">Music</label><br><br>
+
+      <input type="submit" value="Register">
+    </form>
+  </section>
+
+</body>
+</html>
